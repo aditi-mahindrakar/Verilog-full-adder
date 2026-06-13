@@ -14,12 +14,14 @@ The design hierarchy verified during synthesis:
 - `HA2` (Half Adder 2): Computes final `sum_out` and intermediate carry using the sum from `HA1` and `c_in`.
 - `m1` (OR Gate): Combines carry signals from `HA1` and `HA2` to output the final `carry_out`.
 
-<img width="941" height="752" alt="RTL Schematic" src="https://github.com" />
+<img width="941" height="752" alt="RTL Schematic" src="https://github.com/user-attachments/assets/5bc16d5b-5b92-43a3-9ab2-b9b6a2aefb15" />
+
 
 ## Simulation & Verification
 Functional verification was performed using a dedicated testbench (`full_adder.tb.v`). The simulation waveform outputs confirm that the combinational logic perfectly matches the 1-bit full adder truth table with stable propagation paths.
 
-<img width="960" height="768" alt="Simulation and Verification" src="https://github.com" />
+<img width="960" height="768" alt="Simulation and Verification" src="https://github.com/user-attachments/assets/2b6b56b9-bdc0-405a-88a5-37e91d73d88e" />
+
 
 ## How to Run
 1. Clone the repository:
