@@ -9,7 +9,6 @@ The design implements the standard full adder logic equations using structural h
 - **Carry Stage:** `carry_out = (a & b) | (c_in & (a ^ b))`
 
 ### RTL Schematic
-![RTL Schematic](rtl_viewer.png)
 
 The design hierarchy synthesized in Intel Quartus Prime:
 - `HA1` (Half Adder 1): Computes intermediate sum and carry from inputs `a` and `b`.
@@ -21,7 +20,6 @@ The design hierarchy synthesized in Intel Quartus Prime:
 - **Simulation/Verification:** ModelSim - Intel FPGA Starter Edition
 
 ## Simulation & Verification
-![ModelSim Waveform](modelsim_waveform.png)
 
 Functional verification was performed using a dedicated testbench (`full_adder_tb.v`). The ModelSim waveform outputs confirm that the combinational logic perfectly matches the 1-bit full adder truth table with stable propagation paths.
 
