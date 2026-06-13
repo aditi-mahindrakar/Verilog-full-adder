@@ -26,7 +26,7 @@ Functional verification was performed using a dedicated testbench (`full_adder.t
 ## How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/aditi-mahindrakar/Verilog-full-adder/tree/main
    ```
 2. Import the source design files into your RTL synthesis tool to view the compiled schematic layout.
 3. Load the source files and testbench into your simulation tool environment, compile them, and execute the simulation run to verify the timing waveforms.
