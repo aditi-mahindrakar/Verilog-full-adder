@@ -26,7 +26,7 @@ Functional verification was performed using a dedicated testbench (`full_adder_t
 ## How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/aditi-mahindrakar/Verilog-full-adder/tree/main
    ```
 2. Open the project files in **Intel Quartus Prime** to view the RTL compilation.
 3. Launch **ModelSim**, compile `half_adder.v`, `full_adder.v`, and `full_adder_tb.v`, then run the simulation to view the timing waveforms.
