@@ -9,25 +9,26 @@ The design implements the standard full adder logic equations using structural h
 - **Carry Stage:** `carry_out = (a & b) | (c_in & (a ^ b))`
 
 ### RTL Schematic
-The design hierarchy verified during synthesis:
+The design hierarchy synthesized in Intel Quartus Prime:
 - `HA1` (Half Adder 1): Computes intermediate sum and carry from inputs `a` and `b`.
 - `HA2` (Half Adder 2): Computes final `sum_out` and intermediate carry using the sum from `HA1` and `c_in`.
 - `m1` (OR Gate): Combines carry signals from `HA1` and `HA2` to output the final `carry_out`.
-
 <img width="941" height="752" alt="RTL Schematic" src="https://github.com/user-attachments/assets/5bc16d5b-5b92-43a3-9ab2-b9b6a2aefb15" />
 
+## Tools Used
+- **Synthesis/RTL Viewer:** Intel Quartus Prime
+- **Simulation/Verification:** ModelSim - Intel FPGA Starter Edition
 
 ## Simulation & Verification
-Functional verification was performed using a dedicated testbench (`full_adder.tb.v`). The simulation waveform outputs confirm that the combinational logic perfectly matches the 1-bit full adder truth table with stable propagation paths.
-
+Functional verification was performed using a dedicated testbench (`full_adder_tb.v`). The ModelSim waveform outputs confirm that the combinational logic perfectly matches the 1-bit full adder truth table with stable propagation paths.
 <img width="960" height="768" alt="Simulation and Verification" src="https://github.com/user-attachments/assets/2b6b56b9-bdc0-405a-88a5-37e91d73d88e" />
-
 
 ## How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/aditi-mahindrakar/Verilog-full-adder/tree/main
+   git clone https://github.com
    ```
-2. Import the source design files into your RTL synthesis tool to view the compiled schematic layout.
-3. Load the source files and testbench into your simulation tool environment, compile them, and execute the simulation run to verify the timing waveforms.
+2. Open the project files in **Intel Quartus Prime** to view the RTL compilation.
+3. Launch **ModelSim**, compile `half_adder.v`, `full_adder.v`, and `full_adder_tb.v`, then run the simulation to view the timing waveforms.
+
 
